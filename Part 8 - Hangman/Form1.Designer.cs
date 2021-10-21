@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgHangman = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblInstruction = new System.Windows.Forms.Label();
             this.lblLives = new System.Windows.Forms.Label();
@@ -60,16 +60,16 @@
             this.lblX = new System.Windows.Forms.Label();
             this.lblW = new System.Windows.Forms.Label();
             this.lstGuessed = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // imgHangman
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 126);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 275);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgHangman.Location = new System.Drawing.Point(12, 126);
+            this.imgHangman.Name = "imgHangman";
+            this.imgHangman.Size = new System.Drawing.Size(243, 275);
+            this.imgHangman.TabIndex = 0;
+            this.imgHangman.TabStop = false;
             // 
             // lblTitle
             // 
@@ -444,11 +444,11 @@
             this.Controls.Add(this.lblLives);
             this.Controls.Add(this.lblInstruction);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgHangman);
             this.Name = "frmHangMan";
             this.Text = "Hang Man";
             this.Load += new System.EventHandler(this.frmHangMan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +456,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgHangman;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblInstruction;
         private System.Windows.Forms.Label lblLives;
