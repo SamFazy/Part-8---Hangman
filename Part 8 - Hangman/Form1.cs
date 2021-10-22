@@ -13,6 +13,14 @@ namespace Part_8___Hangman
     public partial class frmHangMan : Form
     {
         List<string> Guess = new List<string>();
+        List<string> RandomWords = new List<string>();
+        Random generator = new Random();
+        int randomWord;
+        int lives;
+        int wordlength;
+        string word;
+        string playerWord;
+
 
         public frmHangMan()
         {
@@ -21,6 +29,22 @@ namespace Part_8___Hangman
 
         private void frmHangMan_Load(object sender, EventArgs e)
         {
+            RandomWords.Add("MINECRAFT");
+            RandomWords.Add("TETRIS");
+            RandomWords.Add("OVERWATCH");
+            RandomWords.Add("BORDERLANDS");
+            RandomWords.Add("POKEMON");
+            RandomWords.Add("FALLOUT");
+            RandomWords.Add("BATTLEFIELD");
+
+            randomWord = generator.Next(0, 6);
+            word = RandomWords[randomWord];
+            wordlength = word.Length;
+            string dash = new String('-', wordlength);
+            playerWord = dash;
+            lblWord.Text = playerWord;
+            label1.Text = word;
+            
 
         }
 
@@ -31,170 +55,158 @@ namespace Part_8___Hangman
 
         private void GuessLetter(string letter)
         {
-            
+            Guess.Add(letter);
+            lstGuessed.DataSource = null;
+            lstGuessed.DataSource = Guess;
+
+            if (word.IndexOf(letter) != -1)
+            {
+                int index = word.IndexOf(letter);
+                label1.Text += index;
+                playerWord = playerWord.Remove(index, 1);
+                playerWord = playerWord.Insert(index, letter);
+                lblWord.Text = (playerWord);
+
+                int index2 = word.LastIndexOf(letter);
+                playerWord = playerWord.Remove(index2, 1);
+                playerWord = playerWord.Insert(index2, letter);
+                lblWord.Text = (playerWord);
+
+            }
+            else
+            {
+                lives = lives - 1;
+                if (lives == 0)
+                {
+                    lblWord.Text = "You Lost";
+                }
+            }
         }
 
         private void lblA_Click(object sender, EventArgs e)
         {
             GuessLetter("A");
             lblA.Visible = false;
-            Guess.Add("A");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblB_Click(object sender, EventArgs e)
         {
             GuessLetter("B");
             lblB.Visible = false;
-            Guess.Add("B");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblC_Click(object sender, EventArgs e)
         {
             GuessLetter("C");
             lblC.Visible = false;
-            Guess.Add("C");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblD_Click(object sender, EventArgs e)
         {
             GuessLetter("D");
             lblD.Visible = false;
-            Guess.Add("D");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
-
+           
         }
 
         private void lblE_Click(object sender, EventArgs e)
         {
             GuessLetter("E");
             lblE.Visible = false;
-            Guess.Add("E");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+
         }
 
         private void lblF_Click(object sender, EventArgs e)
         {
             GuessLetter("F");
             lblF.Visible = false;
-            Guess.Add("F");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
 
         private void lblG_Click(object sender, EventArgs e)
         {
             GuessLetter("G");
             lblG.Visible = false;
-            Guess.Add("G");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblH_Click(object sender, EventArgs e)
         {
             GuessLetter("H");
             lblH.Visible = false;
-            Guess.Add("H");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblI_Click(object sender, EventArgs e)
         {
             GuessLetter("I");
             lblI.Visible = false;
-            Guess.Add("I");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblJ_Click(object sender, EventArgs e)
         {
             GuessLetter("J");
             lblJ.Visible = false;
-            Guess.Add("J");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
 
         private void lblK_Click(object sender, EventArgs e)
         {
             GuessLetter("K");
             lblK.Visible = false;
-            Guess.Add("K");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblL_Click(object sender, EventArgs e)
         {
             GuessLetter("L");
             lblL.Visible = false;
-            Guess.Add("L");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
 
         private void lblM_Click(object sender, EventArgs e)
         {
             GuessLetter("M");
             lblM.Visible = false;
-            Guess.Add("M");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblN_Click(object sender, EventArgs e)
         {
             GuessLetter("N");
             lblN.Visible = false;
-            Guess.Add("N");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+
         }
 
         private void lblO_Click(object sender, EventArgs e)
         {
             GuessLetter("O");
             lblO.Visible = false;
-            Guess.Add("O");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblP_Click(object sender, EventArgs e)
         {
             GuessLetter("P");
             lblP.Visible = false;
-            Guess.Add("P");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblQ_Click(object sender, EventArgs e)
         {
             GuessLetter("Q");
             lblQ.Visible = false;
-            Guess.Add("Q");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
 
         private void lblR_Click(object sender, EventArgs e)
         {
             GuessLetter("R");
             lblR.Visible = false;
-            Guess.Add("R");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
 
         private void lblS_Click(object sender, EventArgs e)
@@ -202,71 +214,56 @@ namespace Part_8___Hangman
             GuessLetter("S");
             lblS.Visible = false;
             Guess.Add("S");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblT_Click(object sender, EventArgs e)
         {
             GuessLetter("T");
             lblT.Visible = false;
-            Guess.Add("T");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblU_Click(object sender, EventArgs e)
         {
             GuessLetter("U");
             lblU.Visible = false;
-            Guess.Add("U");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblV_Click(object sender, EventArgs e)
         {
             GuessLetter("V");
             lblV.Visible = false;
-            Guess.Add("V");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblW_Click(object sender, EventArgs e)
         {
             GuessLetter("W");
             lblW.Visible = false;
-            Guess.Add("W");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblX_Click(object sender, EventArgs e)
         {
             GuessLetter("X");
             lblX.Visible = false;
-            Guess.Add("X");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblY_Click(object sender, EventArgs e)
         {
             GuessLetter("Y");
             lblY.Visible = false;
-            Guess.Add("Y");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+            
         }
 
         private void lblZ_Click(object sender, EventArgs e)
         {
             GuessLetter("Z");
             lblZ.Visible = false;
-            Guess.Add("Z");
-            lstGuessed.DataSource = null;
-            lstGuessed.DataSource = Guess;
+           
         }
     }
 }

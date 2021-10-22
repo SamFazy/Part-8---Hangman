@@ -60,6 +60,7 @@
             this.lblX = new System.Windows.Forms.Label();
             this.lblW = new System.Windows.Forms.Label();
             this.lstGuessed = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Trebuchet MS", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(310, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(213, 55);
+            this.lblTitle.Size = new System.Drawing.Size(211, 54);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Hang Man";
             // 
@@ -118,7 +119,7 @@
             this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA.Location = new System.Drawing.Point(287, 150);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(40, 39);
+            this.lblA.Size = new System.Drawing.Size(39, 38);
             this.lblA.TabIndex = 5;
             this.lblA.Text = "A";
             this.lblA.Click += new System.EventHandler(this.lblA_Click);
@@ -129,7 +130,7 @@
             this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblB.Location = new System.Drawing.Point(333, 150);
             this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(40, 39);
+            this.lblB.Size = new System.Drawing.Size(39, 38);
             this.lblB.TabIndex = 6;
             this.lblB.Text = "B";
             this.lblB.Click += new System.EventHandler(this.lblB_Click);
@@ -140,7 +141,7 @@
             this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC.Location = new System.Drawing.Point(376, 150);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(42, 39);
+            this.lblC.Size = new System.Drawing.Size(41, 38);
             this.lblC.TabIndex = 7;
             this.lblC.Text = "C";
             this.lblC.Click += new System.EventHandler(this.lblC_Click);
@@ -151,7 +152,7 @@
             this.lblD.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblD.Location = new System.Drawing.Point(419, 150);
             this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(42, 39);
+            this.lblD.Size = new System.Drawing.Size(41, 38);
             this.lblD.TabIndex = 8;
             this.lblD.Text = "D";
             this.lblD.Click += new System.EventHandler(this.lblD_Click);
@@ -162,7 +163,7 @@
             this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE.Location = new System.Drawing.Point(462, 150);
             this.lblE.Name = "lblE";
-            this.lblE.Size = new System.Drawing.Size(40, 39);
+            this.lblE.Size = new System.Drawing.Size(39, 38);
             this.lblE.TabIndex = 9;
             this.lblE.Text = "E";
             this.lblE.Click += new System.EventHandler(this.lblE_Click);
@@ -173,7 +174,7 @@
             this.lblF.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblF.Location = new System.Drawing.Point(505, 150);
             this.lblF.Name = "lblF";
-            this.lblF.Size = new System.Drawing.Size(38, 39);
+            this.lblF.Size = new System.Drawing.Size(37, 38);
             this.lblF.TabIndex = 10;
             this.lblF.Text = "F";
             this.lblF.Click += new System.EventHandler(this.lblF_Click);
@@ -184,7 +185,7 @@
             this.lblG.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblG.Location = new System.Drawing.Point(312, 189);
             this.lblG.Name = "lblG";
-            this.lblG.Size = new System.Drawing.Size(43, 39);
+            this.lblG.Size = new System.Drawing.Size(43, 38);
             this.lblG.TabIndex = 11;
             this.lblG.Text = "G";
             this.lblG.Click += new System.EventHandler(this.lblG_Click);
@@ -195,7 +196,7 @@
             this.lblH.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblH.Location = new System.Drawing.Point(355, 189);
             this.lblH.Name = "lblH";
-            this.lblH.Size = new System.Drawing.Size(42, 39);
+            this.lblH.Size = new System.Drawing.Size(41, 38);
             this.lblH.TabIndex = 12;
             this.lblH.Text = "H";
             this.lblH.Click += new System.EventHandler(this.lblH_Click);
@@ -206,7 +207,7 @@
             this.lblI.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblI.Location = new System.Drawing.Point(398, 189);
             this.lblI.Name = "lblI";
-            this.lblI.Size = new System.Drawing.Size(27, 39);
+            this.lblI.Size = new System.Drawing.Size(25, 38);
             this.lblI.TabIndex = 13;
             this.lblI.Text = "I";
             this.lblI.Click += new System.EventHandler(this.lblI_Click);
@@ -217,7 +218,7 @@
             this.lblJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJ.Location = new System.Drawing.Point(428, 189);
             this.lblJ.Name = "lblJ";
-            this.lblJ.Size = new System.Drawing.Size(34, 39);
+            this.lblJ.Size = new System.Drawing.Size(34, 38);
             this.lblJ.TabIndex = 14;
             this.lblJ.Text = "J";
             this.lblJ.Click += new System.EventHandler(this.lblJ_Click);
@@ -228,7 +229,7 @@
             this.lblK.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblK.Location = new System.Drawing.Point(464, 189);
             this.lblK.Name = "lblK";
-            this.lblK.Size = new System.Drawing.Size(40, 39);
+            this.lblK.Size = new System.Drawing.Size(39, 38);
             this.lblK.TabIndex = 15;
             this.lblK.Text = "K";
             this.lblK.Click += new System.EventHandler(this.lblK_Click);
@@ -239,7 +240,7 @@
             this.lblQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQ.Location = new System.Drawing.Point(498, 228);
             this.lblQ.Name = "lblQ";
-            this.lblQ.Size = new System.Drawing.Size(43, 39);
+            this.lblQ.Size = new System.Drawing.Size(43, 38);
             this.lblQ.TabIndex = 21;
             this.lblQ.Text = "Q";
             this.lblQ.Click += new System.EventHandler(this.lblQ_Click);
@@ -250,7 +251,7 @@
             this.lblP.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblP.Location = new System.Drawing.Point(462, 229);
             this.lblP.Name = "lblP";
-            this.lblP.Size = new System.Drawing.Size(40, 39);
+            this.lblP.Size = new System.Drawing.Size(39, 38);
             this.lblP.TabIndex = 20;
             this.lblP.Text = "P";
             this.lblP.Click += new System.EventHandler(this.lblP_Click);
@@ -261,7 +262,7 @@
             this.lblO.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblO.Location = new System.Drawing.Point(419, 228);
             this.lblO.Name = "lblO";
-            this.lblO.Size = new System.Drawing.Size(43, 39);
+            this.lblO.Size = new System.Drawing.Size(43, 38);
             this.lblO.TabIndex = 19;
             this.lblO.Text = "O";
             this.lblO.Click += new System.EventHandler(this.lblO_Click);
@@ -272,7 +273,7 @@
             this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblN.Location = new System.Drawing.Point(376, 228);
             this.lblN.Name = "lblN";
-            this.lblN.Size = new System.Drawing.Size(42, 39);
+            this.lblN.Size = new System.Drawing.Size(41, 38);
             this.lblN.TabIndex = 18;
             this.lblN.Text = "N";
             this.lblN.Click += new System.EventHandler(this.lblN_Click);
@@ -283,7 +284,7 @@
             this.lblM.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM.Location = new System.Drawing.Point(333, 228);
             this.lblM.Name = "lblM";
-            this.lblM.Size = new System.Drawing.Size(45, 39);
+            this.lblM.Size = new System.Drawing.Size(44, 38);
             this.lblM.TabIndex = 17;
             this.lblM.Text = "M";
             this.lblM.Click += new System.EventHandler(this.lblM_Click);
@@ -294,7 +295,7 @@
             this.lblL.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblL.Location = new System.Drawing.Point(294, 228);
             this.lblL.Name = "lblL";
-            this.lblL.Size = new System.Drawing.Size(36, 39);
+            this.lblL.Size = new System.Drawing.Size(35, 38);
             this.lblL.TabIndex = 16;
             this.lblL.Text = "L";
             this.lblL.Click += new System.EventHandler(this.lblL_Click);
@@ -305,7 +306,7 @@
             this.lblV.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblV.Location = new System.Drawing.Point(484, 267);
             this.lblV.Name = "lblV";
-            this.lblV.Size = new System.Drawing.Size(40, 39);
+            this.lblV.Size = new System.Drawing.Size(39, 38);
             this.lblV.TabIndex = 26;
             this.lblV.Text = "V";
             this.lblV.Click += new System.EventHandler(this.lblV_Click);
@@ -316,7 +317,7 @@
             this.lblU.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblU.Location = new System.Drawing.Point(441, 267);
             this.lblU.Name = "lblU";
-            this.lblU.Size = new System.Drawing.Size(42, 39);
+            this.lblU.Size = new System.Drawing.Size(41, 38);
             this.lblU.TabIndex = 25;
             this.lblU.Text = "U";
             this.lblU.Click += new System.EventHandler(this.lblU_Click);
@@ -327,7 +328,7 @@
             this.lblT.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblT.Location = new System.Drawing.Point(398, 267);
             this.lblT.Name = "lblT";
-            this.lblT.Size = new System.Drawing.Size(38, 39);
+            this.lblT.Size = new System.Drawing.Size(37, 38);
             this.lblT.TabIndex = 24;
             this.lblT.Text = "T";
             this.lblT.Click += new System.EventHandler(this.lblT_Click);
@@ -338,7 +339,7 @@
             this.lblS.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblS.Location = new System.Drawing.Point(355, 267);
             this.lblS.Name = "lblS";
-            this.lblS.Size = new System.Drawing.Size(40, 39);
+            this.lblS.Size = new System.Drawing.Size(39, 38);
             this.lblS.TabIndex = 23;
             this.lblS.Text = "S";
             this.lblS.Click += new System.EventHandler(this.lblS_Click);
@@ -349,7 +350,7 @@
             this.lblR.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR.Location = new System.Drawing.Point(312, 267);
             this.lblR.Name = "lblR";
-            this.lblR.Size = new System.Drawing.Size(42, 39);
+            this.lblR.Size = new System.Drawing.Size(41, 38);
             this.lblR.TabIndex = 22;
             this.lblR.Text = "R";
             this.lblR.Click += new System.EventHandler(this.lblR_Click);
@@ -360,7 +361,7 @@
             this.lblZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZ.Location = new System.Drawing.Point(454, 306);
             this.lblZ.Name = "lblZ";
-            this.lblZ.Size = new System.Drawing.Size(38, 39);
+            this.lblZ.Size = new System.Drawing.Size(37, 38);
             this.lblZ.TabIndex = 30;
             this.lblZ.Text = "Z";
             this.lblZ.Click += new System.EventHandler(this.lblZ_Click);
@@ -371,7 +372,7 @@
             this.lblY.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblY.Location = new System.Drawing.Point(414, 306);
             this.lblY.Name = "lblY";
-            this.lblY.Size = new System.Drawing.Size(39, 39);
+            this.lblY.Size = new System.Drawing.Size(39, 38);
             this.lblY.TabIndex = 29;
             this.lblY.Text = "Y";
             this.lblY.Click += new System.EventHandler(this.lblY_Click);
@@ -382,7 +383,7 @@
             this.lblX.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblX.Location = new System.Drawing.Point(378, 306);
             this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(40, 39);
+            this.lblX.Size = new System.Drawing.Size(39, 38);
             this.lblX.TabIndex = 28;
             this.lblX.Text = "X";
             this.lblX.Click += new System.EventHandler(this.lblX_Click);
@@ -393,7 +394,7 @@
             this.lblW.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblW.Location = new System.Drawing.Point(335, 306);
             this.lblW.Name = "lblW";
-            this.lblW.Size = new System.Drawing.Size(49, 39);
+            this.lblW.Size = new System.Drawing.Size(48, 38);
             this.lblW.TabIndex = 27;
             this.lblW.Text = "W";
             this.lblW.Click += new System.EventHandler(this.lblW_Click);
@@ -408,11 +409,21 @@
             this.lstGuessed.Size = new System.Drawing.Size(243, 284);
             this.lstGuessed.TabIndex = 31;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "label1";
+            // 
             // frmHangMan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 528);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lstGuessed);
             this.Controls.Add(this.lblZ);
             this.Controls.Add(this.lblY);
@@ -488,6 +499,7 @@
         private System.Windows.Forms.Label lblX;
         private System.Windows.Forms.Label lblW;
         private System.Windows.Forms.ListBox lstGuessed;
+        private System.Windows.Forms.Label label1;
     }
 }
 
