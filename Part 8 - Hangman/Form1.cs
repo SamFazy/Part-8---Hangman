@@ -405,6 +405,11 @@ namespace Part_8___Hangman
             imgHangman3.Visible = false;
             imgHangman5.Visible = false;
             imgHangman4.Visible = false;
+
+            Guess.Clear();
+            lstGuessed.DataSource = null;
+            lstGuessed.DataSource = Guess;
+
         }
 
         private void btnDone_Click_1(object sender, EventArgs e)
